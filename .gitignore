@@ -1,4 +1,5 @@
 # Ignored files
+data
 *.csv
 .DS_Store
 .idea
