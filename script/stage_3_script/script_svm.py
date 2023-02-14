@@ -1,9 +1,9 @@
-from code.stage_2_code.Dataset_Loader import Dataset_Loader
-from code.stage_2_code.Method_SVM import Method_SVM
-from code.stage_2_code.Result_Saver import Result_Saver
-from code.stage_2_code.Setting_KFold_CV import Setting_KFold_CV
-from code.stage_2_code.Setting_Train_Test_Split import Setting_Train_Test_Split
-from code.stage_2_code.Evaluate_Accuracy import Evaluate_Accuracy
+from code.stage_3_code.Dataset_Loader import Dataset_Loader
+from code.stage_3_code.Method_SVM import Method_SVM
+from code.stage_3_code.Result_Saver import Result_Saver
+from code.stage_3_code.Setting_KFold_CV import Setting_KFold_CV
+from code.stage_3_code.Setting_Train_Test_Split import Setting_Train_Test_Split
+from code.stage_3_code.Evaluate_Accuracy import Evaluate_Accuracy
 import numpy as np
 
 #---- Support Vector Machine script ----
