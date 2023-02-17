@@ -15,13 +15,13 @@ class Setting_Train_Test(setting):
     def load_run_save_evaluate(self):
         # load dataset
         loaded_data = self.dataset.load()
-        training_data = loaded_data[0]
-        testing_data = loaded_data[1]
+        X_train = loaded_data[0]
+        y_train = loaded_data[1]
+        X_test = loaded_data[2]
+        y_test = loaded_data[3]
+        X_train = np.expand_dims(X_train, axis=1)  # match dimensions for conv2d
+        X_test = np.expand_dims(X_test, axis=1)  # match dimensions fo conv2d
 
-        X_train = training_data['X']
-        y_train = training_data['y']
-        X_test = testing_data['X']
-        y_test = testing_data['y']
         # X_train, X_test, y_train, y_test = train_test_split(loaded_data['X'], loaded_data['y'], test_size = 0.33)
 
         # run MethodModule
